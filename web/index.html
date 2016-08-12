@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Announcement</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="handle_socket.js"></script>
+</head>
+
+<body>
+  <div class="page-wrap" style="margin-top:20px;">
+    <h1>Enter text for voice message</h1>
+    <form>
+      <div class="styled-input wide">
+        <textarea id="msg" required></textarea>
+        <label>Message</label>
+        <span></span>
+      </div>
+      <input type="button" class="button"  value="Read" onClick="sendMessage(document.getElementById('msg').value)" />
+      <input type="button" class="button" value="Clear" onClick="this.form.reset()" />
+    </form>
+  </div>
+</body>
+
+</html>
